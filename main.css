@@ -1,22 +1,21 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color:rgb(57,73,123);
-  margin: 0;
   padding: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .card {
   max-width: 400px;
   background-color: #ffffffb0;
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   margin: auto;
   transition: transform 0.3s, box-shadow 0.3s;
+  padding: 10px;
 }
 
 .card:hover {
@@ -71,10 +70,48 @@ body {
 }
 
 .buy-button:hover {
-  background-color: #333;
+  background-color: #9c3319;
 }
 
 .clip {
     margin-top: 10px;
     clip-path: circle(50%);
 }
+
+header {
+  margin-bottom: 20px;
+  border: 2px solid black;
+  width: 100%;
+}
+
+/* input:checked + ul {
+  display: block;
+} */
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+label, input {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+li {
+  background-color: #e44d26;
+}
+
+@media (min-width: 40em) {
+  nav ul {
+  display: flex;
+  flex-direction: row;
+  }
+}
+
